@@ -35,6 +35,11 @@ const styles = StyleSheet.create({
     fontSize: "40px",
   },
 
+  boldText: {
+    fontWeight: "bold",
+    fontSize: 12,
+  },
+
   receiverTransactionCombo: {
     display: "flex",
     flexDirection: "row",
@@ -131,6 +136,7 @@ const MyTable = ({ invoiceId }) => {
 
         <View style={styles.receiverTransactionCombo}>
           <View style={styles.receiverText}>
+            <Text style={styles.boldText}>Bill to:</Text>
             <Text>{receiverDetails.name}</Text>
             <Text>{receiverDetails.number}</Text>
             <Text>{receiverDetails.email}</Text>
