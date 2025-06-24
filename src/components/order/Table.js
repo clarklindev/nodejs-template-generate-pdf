@@ -7,7 +7,6 @@ import {
   View,
   StyleSheet,
   Image,
-  Font,
 } from "@react-pdf/renderer";
 import {
   Table,
